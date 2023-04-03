@@ -1,6 +1,7 @@
 import { StyleSheet, Text, View, Image, TouchableOpacity, ScrollView } from 'react-native'
 import React from 'react'
 import { useNavigation } from '@react-navigation/native'
+import ExpandablePathCategory from '../components/ExpandablePathCategory'
 
 const HomeScreen = () => {
   const navigation = useNavigation();
@@ -13,7 +14,7 @@ const HomeScreen = () => {
         </TouchableOpacity>
       </View>
 
-
+      <ExpandablePathCategory />
 
     </View>
   )
@@ -25,7 +26,6 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     backgroundColor: '#EEEEEE',
-    alignItems: 'center',
   },
   topBar: {
     backgroundColor: '#ffffff',
